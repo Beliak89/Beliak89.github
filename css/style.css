@@ -61,7 +61,9 @@ body{
     width: 95%;
     max-width: 1700px;
     margin: 0px auto;
-    
+}
+a{
+    color: #777A73;
 }
 
 /* =========================================================================================================== */
@@ -69,6 +71,11 @@ body{
 
 .background_grey {
     background-color: #F6F6F6;
+}
+
+.active {
+    color:#588535;
+    text-shadow: 0 0 .4px #588535, 0 0 .4px #588535;
 }
 
 
@@ -106,15 +113,11 @@ body{
 .menu__item {
 }
 .menu__link {
-    font-family: 'Poppins';
     font-size: 16px;
     font-weight: 400;
     line-height: 1.5;
-    color: #777A73;
-    box-sizing: border-box;
 }
 .menu__link:hover{
-    box-sizing: border-box;
     color:#588535;
     text-shadow: 0 0 .4px #588535, 0 0 .4px #588535;
 }
@@ -135,7 +138,7 @@ body{
 }
 
 
-/* ======================Окраска иконок поиска, корзины и входа в аккаунт  */
+/*Окраска иконок поиска, корзины и входа в аккаунт  */
 
 .foundblock__link:hover svg circle {
     stroke:#777A73;
@@ -158,7 +161,7 @@ body{
 }
 
 .main {
-    /* flex: 1 1 auto; */
+    flex: 1 1 auto;
     /* width: 100%; */
     /* background-color: #F6F6F6; */
 }
@@ -930,12 +933,15 @@ transition: 0.3s;
 }
 .reviews__container {
     padding: 0 80px;
+    /* border: solid 1px red; */
 }
 
 .reviews__box {
+    height: 300px;
     display: flex;
     justify-content: space-between;
-    margin: 100px 0 0 0 ;
+    margin: 100px 0 50px 0;
+    /* border: solid 1px red; */
 }
 .reviews__box_item {
     width: 30%;
@@ -943,10 +949,11 @@ transition: 0.3s;
     display: flex;
     flex-direction: column;
     align-items: center;
-    border: solid 1px red;
+    /* border: solid 1px red; */
     border-radius: 10px;
     padding: 0 20px 0 20px;
-    box-shadow: ;
+    box-shadow: 0px 5px 21px -10px rgba(33, 32, 30, 0.45);
+    transition: all 0.3s;
 }
 
 .reviews__box_item h5{
@@ -971,6 +978,25 @@ line-height: 24px;
 text-align: center;
 }
 
+.reviews__box_item:hover{
+    background-color: #588535;
+    height: 300px;
+    box-shadow: 0px 20px 33px -9px rgba(33, 32, 30, 0.45);
+}
+}
+.reviews__box_item:hover h5 {
+    color: #FFFFFF;
+    transition: all 0.3s;
+}
+.reviews__box_item:hover span {
+    color: #FFFFFFCC;
+    transition: all 0.3s;
+}
+.reviews__box_item:hover p {
+    color: #FFFFFFCC;
+    transition: all 0.3s;
+}
+
 .reviews__box_item_circle{
     width: 80px;
     height: 80px;
@@ -978,17 +1004,182 @@ text-align: center;
     border: solid 5px #588535;
     display: flex;
     margin: -40px 0 20px 0;
-    background-image: url("../img/reviews/person1.png");
     background-size: 100%;
-    
-    /* background-repeat: no-repeat; */
-    /* background-position: center; */
 }
+
+.circle_person_1{
+    background-image: url("../img/reviews/person1.png");
+}
+
+.circle_person_2{
+    background-image: url("../img/reviews/person2.png");
+}
+
+.circle_person_3{
+    background-image: url("../img/reviews/person3.png");
+}
+
+
+/* ===================Posts============================================================================== */
+
+.posts {
+}
+.posts__container {
+    /* border: solid 1px #588535; */
+    padding: 0 80px 100px 80px;
+}
+.posts__box {
+    /* border: solid 1px red; */
+    margin: 40px 0 0 0 ;
+    display: flex;
+    justify-content: space-between;
+}
+.posts__item {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    /* justify-content: space-between; */
+    /* border: solid 1px blue; */
+    width: 20%;
+    height: 250px;
+    border-radius: 10px;
+    box-shadow: 0px 5px 21px -10px rgba(33, 32, 30, 0.45);
+}
+.posts__item_top {
+   
+    position: relative;
+    height: 60%;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    border-radius: 10px 10px 0 0 ;
+    /* border: solid 1px green; */
+}
+
+.item_top1{
+    background-image: url("../img/posts/post1.png");
+}
+.item_top2{
+    background-image: url("../img/posts/post2.png");
+}
+.item_top3{
+    background-image: url("../img/posts/post3.png");
+}
+.item_top4{
+    background-image: url("../img/posts/post4.png");
+}
+
+.posts__item_top_date {
+    position: absolute;
+    padding: 10px;
+    background-color: #588535;
+    color: #FFFFFF;
+    border-radius: 0 10px 0 0 ;
+    font-size: 12px;
+    bottom: 0;
+}
+.posts__item_bottom {
+    flex: 1 1 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 10px 60px 20px 20px;
+    /* border: solid 1px green; */
+}
+
+.posts__item_bottom span {
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+.posts__item_bottom a {
+    font-size: 14px;
+    color: #588535;
+    transition: all 0.3s;
+}
+
+.posts__item_bottom a:hover{
+    margin: 0 2px;
+    
+}
+
+.posts__item_bottom a::after{
+        content: "→";
+      margin: 0 0 0 10px;
+}
+
 
 
 
 
 /* ============footer================================================================================================== */
 .footer {
-    border: solid 1px green;
+    /* border: solid 1px green; */
+    display: flex;
+    flex-direction: column;
+}
+
+.footer__top {
+    
+    
+}
+.footer__main {
+    display: flex;
+    padding: 80px 80px;
+    /* border: solid 1px blue; */
+    justify-content: space-between;
+}
+
+.__container {
+    
+}
+.footer__column {
+    display: flex;
+    flex-direction: column;
+    max-width: 320px;
+    /* margin: 0 180px 0 0; */
+    /* border: solid 1px red; */
+}
+.footer__column:nth-child(4){
+    max-width: 200px;
+}
+.footer__lable {
+    color: #22271C;
+    font-size: 22px;
+    font-weight: 400;
+    line-height: 1.5;
+    margin: 0 0 15px 0;
+}
+.footer__menu {
+
+}
+.menu_footer {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.5;
+}
+
+.social-networks {
+    margin: 20px 0 0 0 ;
+}
+.social-networks a{
+    margin: 0 10px 0 0;
+}
+.menu-footer__list {
+}
+.menu-footer__item {
+    margin: 0 0 10px 0;
+}
+.menu-footer__item:hover{
+    color: #588535;
+}
+.footer__bottom {
+    background-color: #22271C;
+    
+}
+.footer__bottom__container {
+    padding: 20px 80px;
+    font-size: 12px;
+    color: #FFFFFFCC;
+    font-weight: 400;
 }
