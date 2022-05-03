@@ -185,7 +185,67 @@ a{
 }
 
 
-/* ============================================================================================ */
+
+/* =================account========================================================================== */
+
+
+.registration__container {
+    padding: 0 80px ;
+    margin: 0 0 100px 0;
+  }
+.registration__container h1{
+    text-align: center;
+    font-size: 38px;
+    font-weight: 700;
+    color:#22271C;
+    padding: 20px 0;
+}
+.registration__container p {
+    line-height: 3;
+}
+input[type=text], 
+input[type=password] {
+    width: 100%;
+    padding: 15px;
+    margin: 5px 0 22px 0;
+    background: #F6F6F6;
+  } 
+button {
+    background-color: #588535;
+    padding: 14px 20px;
+    margin: 10px 0;
+    transition: all 0.3s;
+    border-radius: 10px 0 10px 0;
+    color: #FFFFFF;
+    font-size: 16px;
+    font-weight: 500;
+  }
+button:hover {
+    opacity:0.9;
+  }
+  .cancel {
+    padding: 14px 20px;
+    background-color: #FFFFFF;
+    border: solid 1px #588535;
+    color: #588535;
+  }
+  .cancel, .registration {
+    float: left;
+    width: 50%;
+  }
+  
+  
+ 
+  
+  /* Измените стили для кнопки отмены и кнопки регистрации на дополнительных маленьких экранах */
+  @media screen and (max-width: 300px) {
+    .cancel, .registration {
+      width: 100%;
+    }
+  }
+
+
+/* ================firstSection============================================================================ */
 .firstSection__content_left {
     width: 100%;
     /* height: 600px; */
@@ -1346,3 +1406,100 @@ line-height: 1.5;
 
 
 /* =============PAGE__PET_FRIENDLY========================================================= */
+
+
+.friendly__container {
+    width: 100%;
+    padding: 0 0  50px 0 ;
+}
+.friendly__title {
+    text-align: center;
+}
+.friendly__title h2{
+    font-weight: 700;
+    font-size: 38px;
+    line-height: 2;
+    color: #22271C;
+}
+.products__title span{
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 2;
+}
+.friendly__button{
+    width: 160px;
+height: 50px;
+border: solid 1px #588535;
+border-radius: 10px 0 10px 0;
+color: #588535;
+font-weight: 500;
+font-size: 16px;
+line-height: 50px;
+text-align: center;
+margin: 40px auto 80px;
+transition: 0.3s;
+}
+
+
+.friendly__button:hover {
+    background-color:rgba(237, 237, 237, 0.5);
+}
+
+
+
+/* =======================NEWS=================================================================== */
+
+
+.news {
+    
+    /* display: flex;
+    flex-direction: column; */
+}
+.news__container {
+    max-width: 60%;
+    display: flex;
+    flex-direction: column;
+    /* padding: 0 20%; */
+    /* height: fit-content; */
+    /* border: solid 1px red; */
+    /* flex: 1 1 1000px; */
+    margin: 0 auto 50px auto;
+}
+.news__title {
+    text-align: center;
+    /* border: solid 1px blue; */
+    font-size: 38px;
+    font-weight: 700;
+    color:#22271C;
+    padding: 20px 0;
+}
+
+.news__img {
+    margin: 20px 0;
+    /* display: flex; */
+    /* background-position: center; */
+    min-height: 360px;
+    background-image: url("../img/news/news.webp");
+    background-repeat: no-repeat;
+    background-size: auto;
+    /* border: solid 1px green; */
+}
+.news__discription{
+
+}
+
+.news__discription h3 {
+    text-align: left;
+    /* border: solid 1px blue; */
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 1.5;
+    color:#22271C;
+    padding: 30px 0;
+}
+
+.news__discription p{
+font-size: 16px;
+text-align: justify;
+line-height: 1.5;
+}

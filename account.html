@@ -24,7 +24,7 @@
                     <ul class="menu__list">
                         <li class="menu__item"><a href="index.html" class="menu__link">Home</a></li>
                         <li class="menu__item"><a href="about.html" class="menu__link">About us</a></li>
-                        <li class="menu__item"><a href="products.html" class="menu__link active">Products</a></li>
+                        <li class="menu__item"><a href="products.html" class="menu__link">Products</a></li>
                         <li class="menu__item"><a href="news.html" class="menu__link">News</a></li>
                         <li class="menu__item"><a href="" class="menu__link">Contact us</a></li>
                     </ul>
@@ -43,7 +43,7 @@
                             <path d="M19.0001 22C17.8971 22 17.0001 21.0766 17.0001 19.9412C17.0001 18.8057 17.8971 17.8823 19.0001 17.8823C20.1032 17.8823 21.0002 18.8057 21.0002 19.9412C21.0002 21.0766 20.1032 22 19.0001 22ZM19.0001 18.9117C18.4481 18.9117 18.0001 19.3739 18.0001 19.9412C18.0001 20.5084 18.4481 20.9706 19.0001 20.9706C19.5521 20.9706 20.0002 20.5084 20.0002 19.9412C20.0002 19.3739 19.5521 18.9117 19.0001 18.9117Z" fill="#24390B" stroke="#24390B" stroke-width="0.8"/>
                             </svg>
                     </a></div>
-                    <div class="foundblock__account"><a href="account.html" class="foundblock__link">
+                    <div class="foundblock__account"><a href="#" class="foundblock__link">
                         <svg width="16" height="18" viewBox="0 0 18 22" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <circle cx="9" cy="6" r="5" stroke="#24390B" stroke-width="2"/>
                             <path d="M17 22C17 17.5817 13.4183 14 9 14C4.58172 14 1 17.5817 1 22" stroke="#24390B" stroke-width="2"/>
@@ -53,47 +53,23 @@
             </div>
         </header>
         <main class="main">
-            <section class="products">
-                <div class="products__container">
-                    <div class="products__title ">
-                        <h2>Products</h2>
-                        <p>Categories</p>
+                <form action="">
+                    <div class="registration__container">
+                      <h1>Registration form</h1>
+                      <p>Please complete this form to create an account.</p>
+                      <input type="text" placeholder="Email" name="email">
+                      <input type="password" placeholder="Password" name="psw">
+                      <input type="password" placeholder="Repeat password" name="psw-repeat">
+                      <label>
+                        <input type="checkbox" checked="checked" name="remember" style="margin-bottom:25px"> Remember me
+                      </label>
+                      <p>I agree with the terms of registration.</p>
+                      <div class="buttons">
+                        <button type="button" class="cancel">Cancel</button>
+                        <button type="submit" class="registration">Registration</button>
+                      </div>
                     </div>
-                    <div class="products__compilation compilation">
-                         <div class="products__item products__item--1">                       <!--1 -->
-                            <img src="img/collection/pet_friendly.png" alt="" width="324" height="444">
-                            <div class="products__item_name">
-                                <span> Pet Friendly</span>
-                                <a href="pet_friendly.html"><span class="amount_items">16 Items</span></a>
-                            </div>
-                        </div>
-                        <div class="products__item products__item--2">                             <!--2 -->
-                            <img src="img/collection/outdoor.png" alt="" width="165" height="189">
-                            <div class="products__item_name">
-                                <span> Outdoor</span>
-                                <a href="pet_friendly.html"><span class="amount_items">30 Items</span></a>
-                            </div>
-                        </div>
-                        
-                        <div class="products__item products__item--4">                             <!--4 -->
-                            <img src="img/collection/indoor.png" alt="" width="161" height="225">
-                            <div class="products__item_name">
-                                Indoor
-                                <a href="pet_friendly.html"><span class="amount_items">29 Items</span></a>
-                            </div>
-                        </div>
-                        <div class="products__item products__item--7">                        <!--7 -->
-                            <img src="img/collection/office_collection.png" alt="" width="263" height="463">
-                            <div class="products__item_name">
-                                Office colection
-                                <a href="pet_friendly.html"><span class="amount_items">21 Items</span></a>
-                            </div>
-                        </div>
-                    </div>
-                    
-                </div>
-
-            </section>
+                  </form>
         </main>
         <footer class="footer background_grey">
             <div class="footer__top">
@@ -153,13 +129,13 @@
                     <div class="footer__lable">Quick Link</div>
                     <div class="footer__menu menu_footer">
                         <ul class="menu-footer__list">
-                            <a href="">
+                            <a href="news.html">
                                 <li class="menu-footer__item">About Us</li>
                             </a>
-                            <a href="">
+                            <a href="products.html">
                                 <li class="menu-footer__item">Shop</li>
                             </a>
-                            <a href="">
+                            <a href="products.html">
                                 <li class="menu-footer__item">Products</li>
                             </a>
                             <a href="">
