@@ -1817,3 +1817,40 @@ line-height: 1.5;
         max-width: 100%;
     }
 }
+
+
+
+
+.contact__container {
+    margin: 150px auto 0 auto ;
+    width: 60%;
+
+}
+.contact__container input[type=text], select, textarea {
+        width: 100%;
+        border-radius: 10px; 
+        box-sizing: border-box; 
+        margin-top: 15px; 
+        margin-bottom: 30px;
+        resize: vertical;
+        border: solid 1px #588535;
+      }      
+      
+    .contact__container input[type=submit] {
+        cursor: pointer;
+        width: 160px;
+        height: 50px;
+        border-radius: 10px 0 10px 0;
+        background-color: #588535;
+        color: #FFFFFF;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 50px;
+        text-align: center;
+        margin: 40px auto 80px;
+        transition: 0.3s;
+      } 
+      .contact__container input[type=submit]:hover {
+        opacity: 0.9;
+      }
+      

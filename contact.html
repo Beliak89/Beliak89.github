@@ -17,16 +17,16 @@
 </head>
 <body>
     <div class="wrapper">
-        <header class="header noabsolute">
+        <header class="header absolute">
             <div class="header__container">
                 <a href="index.html" class="logo"><img src="img/Logo_with_name.svg" alt="Logo"></a>
                 <nav class="header__menu menu">
                     <ul class="menu__list">
-                        <li class="menu__item"><a href="index.html" class="menu__link">Home</a></li>
+                        <li class="menu__item"><a href="" class="menu__link">Home</a></li>
                         <li class="menu__item"><a href="about.html" class="menu__link">About us</a></li>
                         <li class="menu__item"><a href="products.html" class="menu__link">Products</a></li>
-                        <li class="menu__item"><a href="news.html" class="menu__link active">News</a></li>
-                        <li class="menu__item"><a href="contact.html" class="menu__link">Contact us</a></li>
+                        <li class="menu__item"><a href="news.html" class="menu__link">News</a></li>
+                        <li class="menu__item"><a href="contact.html" class="menu__link active">Contact us</a></li>
                     </ul>
                 </nav>
                 <div class="header__foundblock foundblock">
@@ -53,70 +53,30 @@
             </div>
         </header>
         <main class="main">
-            <section class="news">
-                <div class="news__container">
-
-                    <div class="news__img"></div>   
-                    <div class="news__discription">
-                        <h3>Girthy 'penis plant' blooms for the first time, sparking excitement at Dutch garden</h3>
-                        <p>A plant that stands taller than a grown human, reeks of decomposing flesh and looks 
-                            vaguely phallic recently bloomed in the Netherlands' oldest botanical garden, to the 
-                            delight of garden staff and visitors alike.
-
-                            The Amorphophallus decus-silvae, a type of "penis plant," bloomed for the first time last 
-                            week after about six years of growth, according to a statement from Leiden University, which 
-                            founded the garden, Hortus Botanicus Leiden, in 1590. Garden volunteer Rudmer Postma originally 
-                            cultivated the towering plant from a leaf clipping and has diligently tended to it over the years, 
-                            Dutch newspaper NRC reported. Part of the plant grows underground as a "tuber," and another portion 
-                            pokes up through the soil, Postma told NRC. In mid-September, the A. decus-silvae sprouted a bud for 
-                            the first time, indicating that it might soon burst into bloom. 
-
-                            Over the past month, the bud grew to be about 1.6 feet (0.5 meter) tall, and its supporting stem is now 
-                            6.5 feet (2 m) long. And last week, the bud finally unfurled, exposing an erect structure standing proudly 
-                            at its center, according to the Leiden University statement. This white, phallus-like structure, called the 
-                            spadix, extended upward from a collar of ribbed, purple foliage, known as a spathe. It's the spadix that generates 
-                            the penis plant's distinct odor, a pungent aroma reminiscent of rotting meat.
-                        </p>
-
-                        <h3>It's the size of a human and smells of rotting flesh.</h3>
-
-                        <p>
-                            Hortus Botanicus Leiden volunteer Roos Kocken filmed a video of the A. decus-silvae shortly after it bloomed, 
-                            noting that "it didn't smell very bad yet, but it got more intense in the afternoon." The garden set up a ladder 
-                            next to the blooming plant so visitors could peer down into its open spathe and experience the spadix's scent at 
-                            close range. 
-
-                            Like its relative the corpse flower (Amorphophallus titanum), in the wild, the blooming A. decus-silvae uses its 
-                            stench to draw flies and other pollinating insects into its spathe. The plant then enters the next stage of its 
-                            growth cycle, during which it starts pumping out pollen in large quantities. This pollen clings to any insects that 
-                            flock to the stinky flower; after the bloom withers and the stench subsides, the pollen-coated insects buzz off to 
-                            (ideally) pollinate a nearby A. decus-silvae. 
-
-                            Hortus Botanicus Leiden has just one A. decus-silvae plant, but the garden staff collected and stored the plant's 
-                            pollen at minus 76 degrees Fahrenheit (minus 60 degrees Celsius), in order to use it to pollinate other specimens in 
-                            the future and to share some with other gardens, greenhouse manager Rogier van Vugt told NRC.
-
-
-                            Very few gardens keep an A. decus-silvae in their collections; in fact, the Hortus Botanicus Leiden's plant is only the 
-                            third representative of the species to bloom in Europe, van Vugt said in an interview with the Dutch regional broadcaster 
-                            Omroep West. In the wild, A. decus-silvae grows only in the hot, humid tropical forests of the Indonesian island of Java. 
-
-                            Hortus Botanicus Leiden houses several other plants in the Amorphophallus genus, whose name translates to "shapeless" or 
-                            "misshapen penis," van Vugt told 
-                            Omroep West. ("It's a bit of a stupid name," he added, noting that you need "a little imagination" to see the cigar-like spadix
-                            as a phallus.) 
-
-                            Incidentally, the species name decus-silvae translates to "glory of the forest" — a name still suggestive of genitalia but perhaps 
-                            less blatant than the plant's genus name.
-                        </p>
-                      
-                    </div>    
-                              
-                    </div>
-  
-                    
-                </div>
-                <a href="index.html"><div class="friendly__button">  ←  Go Back  </div></a>
+            <section contact>
+                <div class="contact__container">
+                    <form action="action_page">
+                  
+                      <label for="fname">First Name</label>
+                      <input type="text" id="fname" name="firstname" placeholder="Your name..">
+                  
+                      <label for="lname">Last Name</label>
+                      <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+                  
+                      <label for="country">Country</label>
+                      <select id="country" name="country">
+                        <option value="australia">Belarus</option>
+                        <option value="canada">Ukraine</option>
+                        <option value="usa">USA</option>
+                      </select>
+                  
+                      <label for="subject">Subject</label>
+                      <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+                  
+                      <input type="submit" value="Submit">
+                  
+                    </form>
+                  </div>
             </section>
         </main>
         <footer class="footer background_grey">
