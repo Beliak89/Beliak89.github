@@ -43,7 +43,7 @@ body {
   min-width: 300px;
 }
 .wrapper {
-/*   overflow: hidden; */
+  overflow: hidden;
   display: flex;
   flex-direction: column;
   min-height: 100%;
