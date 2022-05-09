@@ -40,7 +40,8 @@ body {
   font-family: "Poppins", sans-serif;
   color: #777a73;
   background-color: #ffffff;
-  min-width: 300px;
+  min-width: 400px;
+  width: 100%;
 }
 .wrapper {
   overflow: hidden;
